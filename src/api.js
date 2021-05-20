@@ -38,5 +38,9 @@ const newGames= `games?${key}dates=${lastYear},${currentDate}&ordering=-released
  export const popularGamesURL=()=> `${base_url}${popular_games}`
  export const upcomingGamesURL =()=> `${base_url}${upcoming_games}`
  export const newGamesURL=()=> `${base_url}${newGames}`
+ export const gamesDetailsURL=(game_id)=> `${base_url}games/${game_id}?${key}`
+ //screenshots
+export  const gamesScreenshotURL =(game_id)=> `${base_url}games/${game_id}/screenshots?${key}` 
  //console.log(upcoming_gamesURL())
 //https://api.rawg.io/api/games?key=fd0e14baee5444dea0aecbe2dcaee475&dates=2019-09-01,2019-09-30&ordering=-rating&page_size=1
+//https://api.rawg.io/api/games/437059/screenshots?key=fd0e14baee5444dea0aecbe2dcaee475

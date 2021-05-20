@@ -2,25 +2,28 @@
 
 import {combineReducers} from 'redux';
 import gamesReducer from './gamesReducer'
+import detailReducer from './detailReducer'
 
-const initState={
-    name:'',
-    isLogged:false,
-}
-const userReducer =(state=initState,action )=>{
-           switch(action.type){
-                default:
-                    return {...state}
-           } 
-}
-
-
+  
 
 
 
 const rootReducer =combineReducers({
     games:gamesReducer,  //can give any name
-    user:userReducer
+     detail:detailReducer,
 })
 
 export default rootReducer
+
+//const initState={
+    //     name:'',
+    //     isLogged:false,
+    // }
+    // const userReducer =(state=initState,action )=>{
+    //            switch(action.type){
+    //                 default:
+    //                     return {...state}
+    //            } 
+    // }
+    
+    
